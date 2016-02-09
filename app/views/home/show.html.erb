@@ -1,9 +1,11 @@
-<h2>Viagogo Results</h2>
+<h2>Viagogo Search Results</h2>
 
-<% @category.each do |i| %>
-  <li>
-    <%= i.name %>
-  </li>
-    <%= i.description_html.html_safe %>
-    <%= link_to "Tickets", i.links["category:webpage"].href %>
-<% end %>
+</br>
+<article>
+  <% @category.each do |i| %>
+    <li>
+      <b><%= i.name %></b> <%= link_to "Tickets", i.links["category:webpage"].href, class: "link" %>
+      <%= i.description_html.html_safe %>
+    </li>
+  <% end %>
+</article>
