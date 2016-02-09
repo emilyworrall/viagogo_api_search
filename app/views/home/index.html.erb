@@ -1,0 +1,6 @@
+<h3>Viagogo Search</h3>
+
+<%= form_tag('/results', method: "get") do %>
+  <%= text_field_tag :search_term, params[:search_term], placeholder: "Search Viagogo" %>
+  <%= submit_tag "Search"%>
+<% end %>
