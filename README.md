@@ -5,6 +5,9 @@ This Rails application uses the Viagogo API and GogoKit Ruby gem to return searc
 
 Getting Started
 ===============
+
+To use this application you will need access to Viagogo client credentials. 
+
 ```
 $ git clone https://github.com/emilyworrall/viagogo_api_search.git <project name>
 $ cd <project name>
